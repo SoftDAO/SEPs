@@ -3,7 +3,7 @@ sip: <to be assigned>
 title: <SEP title>
 network: <Ethereum | Avalanche | Polygon>
 status: <Draft>
-type: <Meta-Governance | Governance>
+type: <Meta-Governance | Governance | Process | Request for Enhancement | Software>
 author: <a list of the author's or authors' name(s) and/or username(s), or name(s) and email(s), e.g. (use with the parentheses or triangular brackets): FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
 implementor: <a list of the author's or authors' name(s) and/or username(s), or name(s) and email(s), e.g. (use with the parentheses or triangular brackets): FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
 release: (Release Name)
