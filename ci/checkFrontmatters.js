@@ -22,7 +22,13 @@ const commonValidationSchema = Yup.object().shape({
   status: Yup.string().oneOf(statuses),
   author: Yup.string().required(),
   network: Yup.string()
-    .oneOf(['Ethereum', 'Optimism', 'Ethereum & Optimism', 'Unknown'])
+    .oneOf([
+      'Ethereum',
+      'Optimism',
+      'Ethereum & Optimism',
+      'Cross-Chain',
+      'Unknown',
+    ])
     .required(),
   implementor: Yup.string().nullable(),
   release: Yup.string().nullable(),
