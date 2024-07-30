@@ -1,5 +1,5 @@
 ---
-sip: <to be assigned>
+sep: <to be assigned>
 title: <SEP title>
 network: <Ethereum | Optimism | Ethereum & Optimism | Cross-Chain | Unknown>
 status: <Draft>
