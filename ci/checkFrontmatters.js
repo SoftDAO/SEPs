@@ -9,7 +9,15 @@ const tallyIdRegex = /^https?:\/\/(tally.xyz).*\/([A-z0-9]{7,})$/
 const commonValidationSchema = Yup.object().shape({
   file: Yup.string().required(),
   title: Yup.string().required(),
-  type: Yup.string().oneOf(['Meta-Governance', 'Governance']).required(),
+  type: Yup.string()
+    .oneOf([
+      'Meta-Governance',
+      'Governance',
+      'Process',
+      'Request for Enhancement',
+      'Software',
+    ])
+    .required(),
   proposal: Yup.string().matches(tallyIdRegex).nullable(), // Made optional
   status: Yup.string().oneOf(statuses),
   author: Yup.string().required(),
