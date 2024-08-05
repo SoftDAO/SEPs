@@ -9,7 +9,6 @@ implementor: SOFT Development Team
 release: (Release Name)
 implementation-date:
 discussions-to: https://forum.thesoftdao.com/t/soft-fee-switch-enhancing-soft-viability/10733
-proposal: <snapshot.org proposal link> (*optional)
 created: 2024-03-20
 requires:
 ---
