@@ -2,7 +2,7 @@
 sep: 0003
 title: SOFT Fee Switch Enhancement Proposal
 network: Ethereum
-status: Proposed
+status: Implemented
 type: Governance
 author: SOFT Governance Community
 implementor: SOFT Development Team
