@@ -2,7 +2,7 @@
 sep: 0004
 title: SoftSDK
 network: Cross-Chain
-status: Proposed
+status: Implemented
 type: Meta-Governance
 author: 0xAtomic
 implementor: 0xAtomic
