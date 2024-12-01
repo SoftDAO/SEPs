@@ -2,7 +2,7 @@
 sep: 0005
 title: Fee Collection - Sales
 author: masonicgit
-status: Proposed
+status: Implemented
 type: Software
 network: Cross-Chain
 implementor: TBD
