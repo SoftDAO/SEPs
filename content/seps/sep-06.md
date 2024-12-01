@@ -2,7 +2,7 @@
 sep: 0006
 title: Base Integration
 author: Val
-status: Proposed
+status: Implemented
 type: Software
 network: Base
 implementor: TBD
