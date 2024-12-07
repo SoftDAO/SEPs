@@ -9,7 +9,6 @@ implementor: 0xAtomic
 release: SoftSDK v1
 implementation-date:
 discussions-to: https://forum.thesoftdao.com/t/rfp-softsdk-v1-development/10722
-proposal: <snapshot.org proposal link> (*optional)
 created: 2024-03-08
 requires: x
 ---

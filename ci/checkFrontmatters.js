@@ -5,16 +5,30 @@ const statuses = require('./statuses')
 const fs = require('fs/promises')
 const { promisify } = require('util')
 const g = promisify(glob)
-const snapshotIdRegex = /^https?:\/\/(snapshot.org).*\/([A-z0-9]{7,})$/
+const tallyIdRegex = /^https?:\/\/(tally.xyz).*\/([A-z0-9]{7,})$/
 const commonValidationSchema = Yup.object().shape({
   file: Yup.string().required(),
   title: Yup.string().required(),
-  type: Yup.string().oneOf(['Meta-Governance', 'Governance']).required(),
-  proposal: Yup.string().matches(snapshotIdRegex).nullable(), // Made optional
+  type: Yup.string()
+    .oneOf([
+      'Meta-Governance',
+      'Governance',
+      'Process',
+      'Request for Enhancement',
+      'Software',
+    ])
+    .required(),
+  proposal: Yup.string().matches(tallyIdRegex).nullable(), // Made optional
   status: Yup.string().oneOf(statuses),
   author: Yup.string().required(),
   network: Yup.string()
-    .oneOf(['Ethereum', 'Optimism', 'Ethereum & Optimism'])
+    .oneOf([
+      'Ethereum',
+      'Optimism',
+      'Ethereum & Optimism',
+      'Cross-Chain',
+      'Unknown',
+    ])
     .required(),
   implementor: Yup.string().nullable(),
   release: Yup.string().nullable(),
